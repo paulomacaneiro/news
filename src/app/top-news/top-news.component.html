@@ -1,0 +1,13 @@
+<div clas="container-fluid-mt-3">
+  <h4>Notícias Principais <marquee behavior="" direction="">aguarde novos projetos</marquee></h4>
+  <div class="row mt-3">
+    <div class="col-lg-3 mt-3 mb-3" *ngFor="let item of topHeadlinesData">
+      <div class="box">
+        <img [src]="item.urlToImage" alt="imagem não acessível">
+        <h5 class="mt-3 mb-3">{{item.title | encurtador:60}}</h5>
+        <a class="btn btn-dark btn-sm" [href]="item.url" target="_blank">Leia Mais</a>
+      </div>
+    </div>
+
+  </div>
+</div>
